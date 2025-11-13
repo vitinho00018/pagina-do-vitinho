@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Pessoal do Victor</title>
+    <!-- Carrega a biblioteca Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carrega Lucide Icons para os ícones das redes sociais -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- CSS (Style) Integrado -->
+    <style>
+        /* Importação da fonte Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        :root {
+            --primary-color: #4f46e5; /* Índigo vibrante para destaque */
+            --bg-color: #0f172a; /* Fundo escuro */
+            --card-color: #1e293b; /* Cor do cartão (fundo do perfil) */
+        }
 
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: #f3f4f6; /* Texto claro */
+        }
+        
+        /* Estilos dos botões para um visual mais agradável */
+        .social-button {
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+            /* Tailwind classes: rounded-xl, text-lg, font-semibold, flex, items-center, justify-center */
+        }
+        
+        .social-button:hover {
+            transform: translateY(-4px) scale(1.02); /* Levanta e expande levemente */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra mais intensa no hover */
+            filter: brightness(1.1);
+        }
