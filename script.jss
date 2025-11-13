@@ -1,6 +1,4 @@
-<script>
-        // Inicializa os ícones SVG do Lucide para serem exibidos no navegador
-        lucide.createIcons();
-    </script>
-</body>
-</html>
+// Espera o carregamento completo da página antes de inicializar os ícones
+document.addEventListener("DOMContentLoaded", () => {
+    lucide.createIcons();
+});

@@ -4,7 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Pessoal do Victor</title>
-    <!-- Carrega a biblioteca Tailwind CSS para estilização rápida e responsiva -->
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Carrega Lucide Icons para os ícones das redes sociais -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Card Principal -->
+    <div class="w-full max-w-sm mx-auto bg-[var(--card-color)] p-8 rounded-2xl shadow-2xl border-t-8 border-[var(--primary-color)]">
+        
+        <!-- Cabeçalho -->
+        <header class="text-center mb-8">
+            <div class="w-32 h-32 mx-auto mb-4 bg-[var(--primary-color)] rounded-full flex items-center justify-center border-4 border-gray-700 hover:scale-105 transition duration-300">
+                <i data-lucide="zap" class="w-16 h-16 text-white"></i>
+            </div>
+            
+            <h1 class="text-3xl font-extrabold text-white mb-1">Site do Victor</h1>
+            <p class="text-[var(--primary-color)] font-medium">Seu Hub de Conexão Digital</p>
+            <p class="text-sm mt-3 text-gray-400 italic">Clique nos botões abaixo para entrar nos apps!</p>
+        </header>
+
+        <!-- Botões -->
+        <main class="space-y-5">
+            <a href="https://www.instagram.com/seuperfil" target="_blank" class="social-button block p-3 bg-pink-600 hover:bg-pink-700 text-white rounded-xl text-lg font-semibold flex items-center justify-center">
+                <i data-lucide="instagram" class="w-6 h-6 mr-3"></i>
+                Entrar no Instagram
+            </a>
+
+            <a href="https://wa.me/5511999999999" target="_blank" class="social-button block p-3 bg-green-500 hover:bg-green-600 text-white rounded-xl text-lg font-semibold flex items-center justify-center">
+                <i data-lucide="message-square-text" class="w-6 h-6 mr-3"></i>
+                Entrar no WhatsApp
+            </a>
+
+            <a href="https://www.facebook.com/seuperfil" target="_blank" class="social-button block p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-lg font-semibold flex items-center justify-center">
+                <i data-lucide="facebook" class="w-6 h-6 mr-3"></i>
+                Entrar no Facebook
+            </a>
+
+            <a href="#" class="social-button block p-3 bg-gray-700 hover:bg-[var(--primary-color)] text-white rounded-xl text-lg font-semibold flex items-center justify-center">
+                <i data-lucide="briefcase" class="w-6 h-6 mr-3"></i>
+                Portfólio / Outro Link
+            </a>
+        </main>
+        
+        <!-- Rodapé -->
+        <footer class="mt-8 text-center text-xs text-gray-500">
+            <p>Desenvolvido para Victor | Design Moderno & Responsivo</p>
+        </footer>
+
+    </div>
+
+    <!-- Script externo -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,82 +1,28 @@
-<style>
-        /* Importação da fonte Inter */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        
-        :root {
-            --primary-color: #4f46e5; /* Índigo vibrante para destaque */
-            --bg-color: #0f172a; /* Fundo escuro */
-            --card-color: #1e293b; /* Cor do cartão (fundo do perfil) */
-        }
+/* Importa a fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: #f3f4f6; /* Texto claro */
-        }
-        
-        /* Estilos dos botões para um visual mais agradável */
-        .social-button {
-            transition: all 0.2s ease-in-out;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
-            /* Classes Tailwind garantem o restante do estilo: rounded-xl, text-lg, font-semibold, flex, items-center, justify-center */
-        }
-        
-        .social-button:hover {
-            transform: translateY(-4px) scale(1.02); /* Levanta e expande levemente */
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra mais intensa no hover */
-            filter: brightness(1.1);
-        }
-    </style>
-</head>
-<body class="min-h-screen flex items-center justify-center p-4">
+/* Paleta de cores */
+:root {
+    --primary-color: #4f46e5; /* Índigo vibrante */
+    --bg-color: #0f172a; /* Fundo escuro */
+    --card-color: #1e293b; /* Cor do cartão */
+}
 
-    <!-- Container Principal do Perfil (Card) -->
-    <div class="w-full max-w-sm mx-auto bg-[var(--card-color)] p-8 rounded-2xl shadow-2xl border-t-8 border-[var(--primary-color)]">
-        
-        <!-- Cabeçalho do Perfil -->
-        <header class="text-center mb-8">
-            <div class="w-32 h-32 mx-auto mb-4 bg-[var(--primary-color)] rounded-full flex items-center justify-center border-4 border-gray-700 hover:scale-105 transition duration-300">
-                <!-- Ícone de usuário (placeholder para foto) -->
-                <i data-lucide="zap" class="w-16 h-16 text-white"></i>
-            </div>
-            
-            <h1 class="text-3xl font-extrabold text-white mb-1">Site do Victor</h1>
-            <p class="text-[var(--primary-color)] font-medium">Seu Hub de Conexão Digital</p>
-            <p class="text-sm mt-3 text-gray-400 italic">Clique nos botões abaixo para entrar nos apps!</p>
-        </header>
+/* Estilo geral */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: #f3f4f6;
+}
 
-        <!-- Seção de Botões de Redes Sociais -->
-        <main class="space-y-5">
-            
-            <!-- Botão Instagram: IMPORTANTE: TROQUE "seuperfil" PELO SEU NOME DE USUÁRIO DO INSTAGRAM -->
-            <a href="https://www.instagram.com/seuperfil" target="_blank" class="social-button block p-3 bg-pink-600 hover:bg-pink-700 text-white rounded-xl text-lg font-semibold flex items-center justify-center">
-                <i data-lucide="instagram" class="w-6 h-6 mr-3"></i>
-                Entrar no Instagram
-            </a>
+/* Botões das redes sociais */
+.social-button {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
-            <!-- Botão WhatsApp: IMPORTANTE: TROQUE O NÚMERO "5511999999999" PELO SEU NÚMERO REAL (COM CÓDIGO DO PAÍS E DDD) -->
-            <a href="https://wa.me/5511999999999" target="_blank" class="social-button block p-3 bg-green-500 hover:bg-green-600 text-white rounded-xl text-lg font-semibold flex items-center justify-center">
-                <i data-lucide="message-square-text" class="w-6 h-6 mr-3"></i>
-                Entrar no WhatsApp
-            </a>
-
-            <!-- Botão Facebook: IMPORTANTE: TROQUE "seuperfil" PELA URL DO SEU PERFIL DO FACEBOOK -->
-            <a href="https://www.facebook.com/seuperfil" target="_blank" class="social-button block p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-lg font-semibold flex items-center justify-center">
-                <i data-lucide="facebook" class="w-6 h-6 mr-3"></i>
-                Entrar no Facebook
-            </a>
-
-            <!-- Botão Adicional: TROQUE O "#" PELA URL DE UM PORTFÓLIO OU OUTRO LINK IMPORTANTE -->
-            <a href="#" class="social-button block p-3 bg-gray-700 hover:bg-[var(--primary-color)] text-white rounded-xl text-lg font-semibold flex items-center justify-center">
-                <i data-lucide="briefcase" class="w-6 h-6 mr-3"></i>
-                Portfólio / Outro Link
-            </a>
-            
-        </main>
-        
-        <!-- Rodapé -->
-        <footer class="mt-8 text-center text-xs text-gray-500">
-            <p>Desenvolvido para Victor | Design Moderno & Responsivo.</p>
-        </footer>
-
-    </div>
+.social-button:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.1);
+}
