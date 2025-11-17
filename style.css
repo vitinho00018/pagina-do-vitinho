@@ -1,28 +1,27 @@
-/* Importa a fonte Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Conteúdo do arquivo style.css */
 
-/* Paleta de cores */
+/* Define cores de exemplo se elas não estiverem definidas em outro lugar */
 :root {
-    --primary-color: #4f46e5; /* Índigo vibrante */
-    --bg-color: #0f172a; /* Fundo escuro */
-    --card-color: #1e293b; /* Cor do cartão */
+    --primary-color: #3B82F6; /* Cor Azul */
+    --card-color: #1F2937; /* Cor Cinza Escuro para o Card */
 }
 
-/* Estilo geral */
+/* Configuração do Wallpaper do Corinthians no BODY 
+   Você pode substituir 'URL_DA_IMAGEM_DO_CORINTHIANS' pelo link direto da imagem.
+*/
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--bg-color);
-    color: #f3f4f6;
+    background-image: url('URL_DA_IMAGEM_DO_CORINTHIANS'); /* Substitua AQUI */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
 }
 
-/* Botões das redes sociais */
+/* Adiciona um overlay escuro (gradiente) para melhorar a legibilidade do card */
+.min-h-screen {
+    background-color: rgba(0, 0, 0, 0.4); /* Adiciona uma leve camada preta */
+}
+
+/* Garante que os botões (se a classe social-button tiver estilos no CSS) tenham bom contraste */
 .social-button {
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.social-button:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-    filter: brightness(1.1);
+    transition: background-color 0.3s, transform 0.3s;
 }
