@@ -1,15 +1,6 @@
-/* Conteúdo do arquivo style.css */
-
-/* Define cores do Corinthians (Preto e Branco) */
-:root {
-    --primary-color: #FFFFFF; /* Branco para destaque (borda e texto de hub) */
-    --secondary-color: #1A1A1A; /* Preto do Corinthians (fundo ou detalhes) */
-    --card-color: #000000; /* Preto Puro para o Card */
-}
-
 /* Configuração do Wallpaper do Corinthians no BODY */
 body {
-    background-image: url('https://th.bing.com/th/id/R.50a41d5f3088b90e1f728c3046777083?rik=s%2ff1bV4rBw3BkA&pid=ImgRaw&r=0');
+    background-image: url('https://th.bing.com/th/id/R.50a41d5f3088b90e1f728c3046777083?rik=s%2ff1bV4rBw3BkA&pid=ImgRaw&r=0'); /* AQUI ESTÁ A IMAGEM! */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -18,30 +9,6 @@ body {
 /* Adiciona um overlay escuro para melhorar a legibilidade */
 body {
     /* Mantém a imagem de fundo e adiciona uma camada semi-transparente preta */
-    background-color: rgba(0, 0, 0, 0.65); /* Aumentei a opacidade para 65% */
+    background-color: rgba(0, 0, 0, 0.65); 
     background-blend-mode: darken;
-}
-
-/* Garante que os botões (se a classe social-button tiver estilos no CSS) tenham bom contraste */
-.social-button {
-    transition: background-color 0.3s, transform 0.3s;
-    /* Botões genéricos agora têm o preto corintiano */
-    background-color: var(--secondary-color) !important;
-}
-
-/* Hover dos Botões Genéricos */
-.social-button:hover {
-    background-color: #333333 !important; /* Um cinza bem escuro no hover */
-}
-
-
-/* Animação e Estilização do Card para parecer mais com o Timão */
-.border-t-8 {
-    /* Adiciona uma sombra branca suave na borda para destacar */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-}
-
-/* Remove a cor do ícone, pois o logo do Corinthians já é branco/preto */
-.w-32 i {
-    color: initial !important; 
 }
