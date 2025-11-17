@@ -2,26 +2,33 @@
 
 /* Define cores de exemplo se elas não estiverem definidas em outro lugar */
 :root {
-    --primary-color: #8d8d8d; /* Cor Azul */
+    /* Mudei a primary-color para um cinza mais escuro (Corinthians) */
+    --primary-color: #A9A9A9; 
     --card-color: #1F2937; /* Cor Cinza Escuro para o Card */
 }
 
-/* Configuração do Wallpaper do Corinthians no BODY 
-   Você pode substituir 'URL_DA_IMAGEM_DO_CORINTHIANS' pelo link direto da imagem.
-*/
+/* Configuração do Wallpaper do Corinthians no BODY */
 body {
-    background-image: url('URL_DA_IMAGEM_DO_CORINTHIANS'); /* Substitua AQUI */
+    background-image: url('https://th.bing.com/th/id/R.50a41d5f3088b90e1f728c3046777083?rik=s%2ff1bV4rBw3BkA&pid=ImgRaw&r=0'); /* AQUI ESTÁ A IMAGEM! */
     background-size: cover; /* Faz a imagem cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
     background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
 }
 
 /* Adiciona um overlay escuro (gradiente) para melhorar a legibilidade do card */
-.min-h-screen {
-    background-color: rgba(0, 0, 0, 0.4); /* Adiciona uma leve camada preta */
+/* Mudei a classe que recebe o overlay para 'body' para que o overlay cubra toda a imagem */
+body {
+    /* Mantém a imagem de fundo e adiciona uma camada semi-transparente preta (preto corintiano) */
+    background-color: rgba(0, 0, 0, 0.55); 
+    background-blend-mode: darken;
 }
 
 /* Garante que os botões (se a classe social-button tiver estilos no CSS) tenham bom contraste */
 .social-button {
     transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Como você mudou a primary color para cinza/branco, ajustei a cor do ícone no cabeçalho */
+.w-32 i {
+    color: #1F2937 !important; /* Cor mais escura para o ícone */
 }
