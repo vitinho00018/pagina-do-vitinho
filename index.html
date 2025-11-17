@@ -17,24 +17,47 @@
         
         <header class="text-center mb-5">
             <div class="w-32 h-32 mx-auto mb-4 bg-[var(--primary-color)] rounded-full flex items-center justify-center border-4 border-gray-700 hover:scale-105 transition duration-300">
-                <i data-lucide="zap" class="w-16 h-16 text-white"></i>
+                <i data-lucide="zap" class="w-16 h-16 text-white"></i> 
             </div>
             
-            <h1 class="text-3xl font-extrabold text-white mb-1">Site do Victor</h1>
-            <p class="text-[var(--primary-color)] font-medium">Seu Hub de Conexão Digital</p>
+            <h1 class="text-3xl font-extrabold text-white mb-1">Victor | Hub Digital</h1>
+            <p class="text-[var(--primary-color)] font-medium">@046.vitin_</p>
         </header>
         
-        <section class="mb-8 p-4 bg-gray-800 rounded-lg shadow-inner">
-            <p class="text-center text-sm text-gray-300 leading-relaxed">
-                Salve rapaziada Sou o Victor e este é o meu site Pessoal. Aqui você pode encontrar meus principais links de contato e projetos. Seja bem-vindo(a) e fique à vontade para me enviar uma mensagem! 🚀
+        <section class="mb-6 p-4 bg-gray-800 rounded-lg shadow-inner border-l-4 border-[var(--primary-color)]">
+            <p class="text-sm text-gray-300 leading-relaxed">
+                👋 Salve rapaziada! Sou o **Victor** e este é o meu espaço digital. 
+            </p>
+            <p class="text-xs text-gray-400 mt-2 italic">
+                Apaixonado por programação e fã do Timão. Se você busca parceria ou só quer trocar uma ideia, os links abaixo são o caminho!
             </p>
         </section>
+
+        <div class="mb-8 text-center">
+            <h3 class="text-sm text-gray-400 font-semibold mb-3 border-b border-gray-700 pb-1">Meus Destaques</h3>
+            <div class="flex flex-wrap justify-center gap-2">
+                <span class="text-xs font-medium bg-gray-700 text-white px-3 py-1 rounded-full border border-gray-600">
+                    #Corinthians
+                </span>
+                <span class="text-xs font-medium bg-gray-700 text-white px-3 py-1 rounded-full border border-gray-600">
+                    #DevEmProgresso
+                </span>
+                <span class="text-xs font-medium bg-gray-700 text-white px-3 py-1 rounded-full border border-gray-600">
+                    #Games
+                </span>
+            </div>
+        </div>
         
-        <p class="text-center text-sm mt-3 mb-5 text-gray-400 italic">Clique nos botões abaixo para entrar nos apps!</p>
+        <p class="text-center text-sm mb-5 text-gray-400 italic">Clique nos botões abaixo para entrar nos apps!</p>
 
-        <main class="space-y-5">
-
-            <a href="https://www.instagram.com/046.vitin_/" 
+        <main class="space-y-4"> <a href="https://www.tiktok.com/@seuperfil" 
+               target="_blank" 
+               class="social-button block p-3 bg-black hover:bg-gray-800 text-white rounded-xl text-lg font-bold flex items-center justify-center border-2 border-white transition transform hover:scale-[1.02]">
+                <i data-lucide="tiktok" class="w-6 h-6 mr-3"></i>
+                Meu Perfil no TikTok 🔥
+            </a>
+            
+            <hr class="border-gray-700 my-4"> <a href="https://www.instagram.com/046.vitin_/" 
                target="_blank" 
                class="social-button block p-3 bg-pink-600 hover:bg-pink-700 text-white rounded-xl text-lg font-semibold flex items-center justify-center">
                 <i data-lucide="instagram" class="w-6 h-6 mr-3"></i>
@@ -68,6 +91,10 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Inicializa os ícones do Lucide (apenas para garantir)
+        lucide.createIcons();
+    </script>
 
 </body>
 </html>
