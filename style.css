@@ -2,7 +2,7 @@
 
 /* Define cores de exemplo se elas não estiverem definidas em outro lugar */
 :root {
-    --primary-color: #3B82F6; /* Cor Azul */
+    --primary-color: #8d8d8d; /* Cor Azul */
     --card-color: #1F2937; /* Cor Cinza Escuro para o Card */
 }
 
